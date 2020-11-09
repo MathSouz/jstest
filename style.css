@@ -1,9 +1,6 @@
 .conteiner{
     display: flex;
-flex-direction: column;
-max-width: 25%;
-
-
+    flex-direction: column;
 }
 
 .input{
@@ -12,9 +9,28 @@ max-width: 25%;
    border-radius: 10px;
    margin:6px 0px;
    background: transparent;
-color: brown;
+   color: brown;
+   text-align: center;
 }
 
 .input:focus{
     background:brown;
+    color: white;
+}
+
+.button
+{
+    border:1px solid brown;
+   padding:16px;
+   border-radius: 10px;
+   margin:6px 0px;
+   background: transparent;
+   color: brown;
+}
+
+/*Estilização quando o o cursor sobrepor o botão*/
+.button:hover
+{
+    background:brown;
+    color: white;
 }

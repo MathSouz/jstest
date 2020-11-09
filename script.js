@@ -3,7 +3,7 @@ const emailInput = document.getElementById('email')
 const passwordInput = document.getElementById('password')
 const submitButton = document.getElementById('submit')
 const list = document.getElementById('registry_list');
-let clients = []
+/*let clients = []
 
 class Client
 {
@@ -12,7 +12,7 @@ class Client
         this.name = name
         this.email = email
     }
-}
+}*/
 
 function isNameInputInvalid()
 {
@@ -73,7 +73,8 @@ submitButton.onclick = function()
     let newClient = new Client(nameInput.value, emailInput.value)
     newClient.password = passwordInput.value;
 
-    clients.push(newClient)
+    /*clients.push(newClient)*/
+    insertNewClient(newClient)
     refreshList()
 }
 
