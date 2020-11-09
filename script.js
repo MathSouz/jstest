@@ -28,6 +28,16 @@ function isNameInputInvalid()
         }
     }
 
+    if(hasName)
+    {
+        alert('Usuário já existente!')
+    }
+
+    else if(name.length == 0)
+    {
+        alert('Campo vazio!')
+    }
+
     return name.length == 0 || hasName
 }
 
@@ -45,7 +55,6 @@ submitButton.onclick = function()
 {
     if(isNameInputInvalid()) 
     {
-        alert('Campo de nome inválido!')
         return;
     }
 
@@ -57,7 +66,7 @@ submitButton.onclick = function()
 
     if(isPasswordInvalid()) 
     {
-        alert('Campo de senha inválido!')
+        alert('A senha precisa ser maior que 8 caracteres!');
         return;
     }
 
